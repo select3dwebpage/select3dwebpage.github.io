@@ -1,1 +1,3 @@
-# select3dwebpage.github.io
+## Project Homepage: 
+#### Device independent interaction with objects using:
+- Eye Tracking and Virtual Reality
