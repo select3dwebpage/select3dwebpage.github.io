@@ -76,9 +76,8 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#header" class="nav navbar-nav">Video</a></li>
                 <li><a href="#about" class="nav navbar-nav">About</a></li>
-                <li><a href="#library" class="nav navbar-nav">Library</a></li>
+                <li><a href="#downloads" class="nav navbar-nav">Downloads</a></li>
                 <li><a href="#documentation" class="nav navbar-nav">Documentation</a></li>
                 <li><a href="#acknowledgements" class="nav navbar-nav">Acknowledgements</a></li>
                 <li><a href="#contact" class="nav navbar-nav">Contact</a></li>
@@ -87,31 +86,30 @@
     </div>
 </div>
 
-<!-- Home -->
-<div class="header vert" id="header">
-    <div class="container">
-        <h4>Integrating</h4>
-        <p class="lead">Virtual Reality &amp; Eye Tracking</p>
-        <br />
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/eBINRku82hA?rel=0&amp;showinfo=0"
-                frameborder="0" allowfullscreen></iframe>
-    </div>
-</div>
-
 <!-- About -->
 <div class="header" id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr>
                 <h3>About</h3><br /><br />
                 <p>
                     <h4><b>What is the project?</b></h4><br />
-                    Device independent interaction with objects using VR, eye-tracking and head-tracking.<br /><br /><br />
+                    It is a library enabling API access to an adapter script and event listeners, which simply allow device independent interaction with other objects.
+                    <br /><br /><br />
+
+                    <h4><b>Description:</b></h4><br />
+
+                    The VR pointer adapter enables developers to easily add gaze pointers to a Unity project. The same scripts will work with all available platforms.
+                    <br /><br />
+                    This adapter adds the ability to interact with the environment either by using eye tracking or head tracking.
+                    The pointer allows you to make GameObjects gaze-aware where event listeners are called whenever the player looks at them. 
+                    This can be used to create an intuitive interaction system or to spread the functionality to a new source of input so that your controllers can be used to do something else.
+                    <br /><br />
+                    This adapter works with Steam VR camera.
+                    <br /><br /><br />
 
                     <h4><b>Why is it important?</b></h4><br />
                     With the growing range of tech devices available to us now and the limitless opportunities their uses provide, soon everyone will have one or more of these available to themselves.
-                    <br /><br />
                     Currently, taking the HTC Vive for example, there are a number of platforms made specifically for this device.
                     However, there isn't any available that integrates the functions of let's say, both the HTC Vive and the Tobii Eye Tracker, allowing for them to be used simultaneously.
                     <br /><br />
@@ -123,13 +121,10 @@
 
                     <h4><b>Devices / technologies integrated:</b></h4><br />
                     <ul>
-                        <li>HTC SMI Vive</li>
+                        <li>SMI HTC Vive</li>
                         <li>VR Head Tracking</li>
                         <li>Tobii Eye-Tracker 4C</li>
-                        <li>SMI Mobile</li>
-                        <li>Fove</li>
                     </ul>
-
                 </p>
             </div>
         </div>
@@ -137,19 +132,14 @@
 </div>
 
 <!-- Library -->
-<div class="header" id="library">
+<div class="header" id="downloads">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr>
-                <h3>Library</h3>
+                <hr><br />
+                <h3>Downloads</h3><br />
                 <p>
-                    Files / Scripts available <a href="https://github.com/PriyankitSingh/VRAdapter/tree/master/AdapterScripts" target="_blank">here</a>.
-                    <br /><br /><br />
-
-                    <h4>Test Script</h4>
-                    <p><small>This is the script users run to test their devices.</small></p><br>
-                    <script src="https://gist.github.com/Sabaoon96/734ab6d204976fff094b3da094201a3e.js"></script>
+                    Project scripts available to download <a href="https://github.com/PriyankitSingh/VRAdapter" target="_blank"><u>here</u></a>.
                 </p>
             </div>
         </div>
@@ -161,42 +151,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr>
+                <hr><br />
                 <h3>Documentation</h3>
                 <p>
                     <br /><br />
-                    <h4><b>Introduction:</b></h4><br />
-
-                    The VR pointer adapter enables developers to easily add gaze pointers to a Unity project. The same scripts will work with all available platforms.
-                    <br /><br />
-                    This adapter adds the ability to interact with the environment either by using eye tracking or head tracking.
-                    The pointer allows you to make GameObjects gaze-aware where event listeners are called whenever the player looks at them. This can be used to create an intuitive interaction system or to spread the functionality to a new source of input so that your controllers can be used to do something else.
-                    <br /><br />
-                    This adapter works with Steam VR camera.
-
-                    <br /><br /><br />
                     <h4><b>How to Use the Adapter:</b></h4><br />
-
+                    
+                    As in the script below:<br /><br />
                     <ul>
                         <li>Add a platform variable to the script to select the type of platform you want to run this script on.</li>
                         <li>Select Generic for a normal HTC Vive to add head tracking based selector and SMI to run the script on a SMI HTC Vive.</li>
                         <li>Add the following code snippet to the start method to set-up the adapter:</li>
                     </ul>
-                     
+
                     <br />
                     <blockquote>
-                        gameObject.AddComponent<VRAdapter>();<br />
-                        adapter = gameObject.GetComponent<VRAdapter>();<br />
-                        adapter.setTarget(this.gameObject);<br />
-                        adapter.setPlatform(platform); // platform is a public variable.
+                        gameObject.AddComponent<VRAdapter>
+                            ();<br />
+                            adapter = gameObject.GetComponent<VRAdapter>
+                                ();<br />
+                                adapter.setTarget(this.gameObject);<br />
+                                adapter.setPlatform(platform); // platform is a public variable.
                     </blockquote>
                     <br />
-                  
+
                     <ul>
                         <li>Add GazeInterface to the script and import all the required methods from the interface.</li>
-                        <li>Implement methods: Implement the OnPointerEnter, OnPointerExit and OnPointerStay methods</li>
+                        <li>Implement methods: OnPointerEnter, OnPointerExit and OnPointerStay methods.</li>
                     </ul>
-                    <br />                    
+
+                    <br /><br /><br />
+                    <h4><b>Test Script</b></h4>
+                    Users can run this script to test their devices.<br /><br />
+                    <script src="https://gist.github.com/Sabaoon96/734ab6d204976fff094b3da094201a3e.js"></script>                   
                 </p>
             </div>
         </div>
@@ -208,13 +195,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <br>
-                <hr>
+                <hr><br />
                 <h3>Acknowledgements</h3> 
                 <br />
                 <ol>
                     <li><a href="https://github.com/sabaoon96" target="_blank">Sabaoon Raza Khan</a></li>
                     <li><a href="https://github.com/priyankitsingh" target="_blank">Priyankit Singh</a></li>
+                    <li><a href="https://www.cs.auckland.ac.nz/~gerald/" target="_blank">Dr Gerald Weber</a></li>
                 </ol>
             </div>
         </div>
@@ -226,8 +213,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <br>
-                <hr>
+                <hr><br />
                 <h3>Contact us</h3>
                 <br />
                 <address>
