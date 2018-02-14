@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113078832-1"></script>
     <script>
@@ -22,22 +23,23 @@
     <meta name="description" content="Integrating VR &amp; Eye Tracking Technology | University of Auckland">
     <meta name="keywords" content="Virtual Reality, VR, Eye Tracking, Gaze, Input, Gaming, Technology, New Zealand, University of Auckland, Integrated, Platform">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Sabaoon Raza Khan">
 
 
     <link href="files/bootstrap.css" type="text/css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="files/style.css">
     <link type="text/css" rel="stylesheet" href="files/font-awesome.css">
+    <link rel="icon" href="#" type="image/png">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <script type="text/javascript" src="files/jquery_002.js"></script>
+    <script type="text/javascript" src="files/bootstrap.js"></script>
+    <script type="text/javascript" src="files/jquery.js"></script>
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="icon" href="#" type="image/png">
-    <link rel="shortcut icon" href="#" type="image/png">
-
-    <script type="text/javascript" src="files/jquery_002.js"></script>
-    <script type="text/javascript" src="files/bootstrap.js"></script>
-    <script type="text/javascript" src="files/jquery.js"></script>
 
     <script type="text/javascript">
         // see http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
@@ -65,6 +67,8 @@
     </script>
 
 </head>
+
+<!-- HTML Body starts here -->
 <body>
 
 <!-- Navigation Bar -->
@@ -75,8 +79,8 @@
             <a href="#" class="navbar-brand">
                 <img src="files/logo.jpg" height="30" alt="VR-EyeTracking Logo">
             </a>
-            <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
             </a>
         </div>
         <div class="collapse navbar-collapse">
@@ -92,6 +96,7 @@
     <br><br>
 </div>
 
+
 <!-- About -->
 <div class="header" id="about">
     <div class="container">
@@ -100,16 +105,16 @@
                 <h3>About</h3><br /><br />
                 <p>
                     <h4><b>What is the project?</b></h4><br />
-                    It is a library enabling API access to an adapter script and event listeners, which simply allow device independent interaction with other objects.
+                    It is a library allowing API access to an adapter script and event listeners, enabling device independent interaction with other objects.
                     <br>
-                    Along with a unity package ready to be imported and run, the scripts can be tested within the created scenes.
+                    Along with a Unity Package ready to be imported and run, the scripts can be tested within the created example scenes.
                     <br /><br /><br />
 
                     <h4><b>Description:</b></h4><br />
 
-                    The VR pointer adapter enables developers to easily add gaze pointers to a Unity project. The same scripts will work with all available platforms.
+                    The Gaze Pointer Adapter enables developers to easily add gaze pointers to a Unity project. The same scripts will work with all available platforms.
+                    This adapter adds the ability to interact with the environment either by using eye tracking or head tracking in VR, and by using eye tracking using the Tobii Eye Tracker.
                     <br /><br />
-                    This adapter adds the ability to interact with the environment either by using eye tracking or head tracking.
                     The pointer allows you to make GameObjects gaze-aware where event listeners are called whenever the player looks at them. 
                     This can be used to create an intuitive interaction system or to spread the functionality to a new source of input so that your controllers can be used to do something else.
                     <br /><br />
@@ -117,7 +122,7 @@
                     <br /><br /><br />
 
                     <h4><b>Why is it important?</b></h4><br />
-                    With the growing range of tech devices available to us now and the limitless opportunities their uses provide, soon everyone will have one or more of these available to themselves.
+                    With the growing range of tech devices available to us now and the limitless opportunities their uses provide, soon everyone will have one or more of these to themselves.
                     Currently, taking the HTC Vive for example, there are a number of platforms made specifically for this device.
                     However, there isn't any available that integrates the functions of both the HTC Vive and the Tobii Eye Tracker, allowing for them to be used simultaneously.
                     <br /><br />
@@ -139,6 +144,7 @@
     </div>
 </div>
 
+
 <!-- Library -->
 <div class="header" id="downloads">
     <div class="container">
@@ -157,6 +163,7 @@
     </div>
 </div>
 
+
 <!-- Documentation -->
 <div class="header" id="documentation">
     <div class="container">
@@ -168,10 +175,20 @@
                     <br /><br />
                     <h4><b>How to Use the Adapter:</b></h4><br />
                     
-                    As in the script below:<br /><br />
+                    Import the unity package provided with this library into your project.
+                    This package contains all the required dependencies, test scenes, and scripts to provide an example of the usage of this tool.
+                    "Test.cs" script provides an example of how the tool can be used to make your games gaze enabled. <br><br><br>
+
+                    <h4><b>Test Script</b></h4>
+                    Users can run this script to test their devices.<br /><br />
+                    <script src="https://gist.github.com/Sabaoon96/734ab6d204976fff094b3da094201a3e.js"></script>    
+                    <br /><br /><br />
+
+                    <b>If running your own project script:</b>
+                    <br /><br />
                     <ul>
                         <li>Add a platform variable to the script to select the type of platform you want to run this script on.</li>
-                        <li>Select Generic for a normal HTC Vive to add head tracking based selector and SMI to run the script on a SMI HTC Vive.</li>
+                        <li>Select Generic for a normal HTC Vive to add the head tracking based selector, SMI to run the script on a SMI HTC Vive, or Tobii to use the Tobii Eye-Tracking device.</li>
                         <li>Add the following code snippet to the start method to set-up the adapter:</li>
                     </ul>
 
@@ -187,17 +204,13 @@
                     <ul>
                         <li>Add GazeInterface to the script and import all the required methods from the interface.</li>
                         <li>Implement methods: OnPointerEnter, OnPointerExit and OnPointerStay methods.</li>
-                    </ul>
-
-                    <br /><br /><br />
-                    <h4><b>Test Script</b></h4>
-                    Users can run this script to test their devices.<br /><br />
-                    <script src="https://gist.github.com/Sabaoon96/734ab6d204976fff094b3da094201a3e.js"></script>                   
+                    </ul>               
                 </p>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Acknowledgements -->
 <div class="header" id="acknowledgements">
@@ -216,6 +229,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Contact -->
 <div class="header" id="contact">
@@ -239,6 +253,7 @@
     </div>
 </div>
 
+<!-- HTML Body Ends here -->
 </body>
-</html>
 
+</html>
