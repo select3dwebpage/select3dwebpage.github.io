@@ -14,13 +14,13 @@
 
 
     <!-- Head tag content -->
-    <title>Project Homepage</title>
+    <title>Select3D Homepage</title>
 
 	<meta http-equiv="expires" content="43200"> 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <meta charset="utf-8">
-    <meta name="description" content="Integrating VR &amp; Eye Tracking Technology | University of Auckland">
+    <meta name="description" content=" Select3D | Integrating VR &amp; Eye Tracking Technology - University of Auckland">
     <meta name="keywords" content="Virtual Reality, VR, Eye Tracking, Gaze, Input, Gaming, Technology, New Zealand, University of Auckland, Integrated, Platform">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Sabaoon Raza Khan">
@@ -49,7 +49,7 @@
             // if "contact" is clicked, but doesn't work.
             // Method works though.
             if (location.hash.length !== 7) {
-                window.scrollTo(window.scrollX, window.scrollY - 120);
+                window.scrollTo(window.scrollX, window.scrollY - 80);
             }
         }
 
@@ -73,19 +73,20 @@
 
 <!-- Navigation Bar -->
 <div class="navbar navbar-fixed-top navbar-default" height="200" role="navigation">
-    <br>
     <div class="container">
         <div class="navbar-header">
             <a href="#" class="navbar-brand">
-                <img src="files/logo.jpg" height="30" alt="VR-EyeTracking Logo">
+                <!-- Logo designed by Sabaoon -->
+                <img src="files/Select3D.png" height="80" alt="VR-EyeTracking Logo">
             </a>
             <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
                 <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
             </a>
         </div>
+        <br>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#about" class="nav navbar-nav">About</a></li>
+                <li><a href="#" class="nav navbar-nav">About</a></li>
                 <li><a href="#downloads" class="nav navbar-nav">Downloads</a></li>
                 <li><a href="#documentation" class="nav navbar-nav">Documentation</a></li>
                 <li><a href="#acknowledgements" class="nav navbar-nav">Acknowledgements</a></li>
@@ -102,41 +103,41 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3>About</h3><br /><br />
+                <h3>About</h3><br><br>
                 <p>
-                    <h4><b>What is the project?</b></h4><br />
-                    It is a library allowing API access to an adapter script and event listeners, enabling device independent interaction with other objects.
-                    <br>
-                    Along with a Unity Package ready to be imported and run, the scripts can be tested within the created example scenes.
-                    <br /><br /><br />
+                    <h4><b>What is Select3D?</b></h4><br>
+                    It is a library enabling user interaction with 3D objects independent of the input device.
+                    <br><br><br>
 
-                    <h4><b>Description:</b></h4><br />
 
-                    The Gaze Pointer Adapter enables developers to easily add gaze pointers to a Unity project. The same scripts will work with all available platforms.
-                    This adapter adds the ability to interact with the environment either by using eye tracking or head tracking in VR, and by using eye tracking using the Tobii Eye Tracker.
-                    <br /><br />
-                    The pointer allows you to make GameObjects gaze-aware where event listeners are called whenever the player looks at them. 
-                    This can be used to create an intuitive interaction system or to spread the functionality to a new source of input so that your controllers can be used to do something else.
-                    <br /><br />
-                    This adapter works with Steam VR camera.
-                    <br /><br /><br />
-
-                    <h4><b>Why is it important?</b></h4><br />
+                    <h4><b>Why is it important?</b></h4><br>
                     With the growing range of tech devices available to us now and the limitless opportunities their uses provide, soon everyone will have one or more of these to themselves.
-                    Currently, taking the HTC Vive for example, there are a number of platforms made specifically for this device.
-                    However, there isn't any available that integrates the functions of both the HTC Vive and the Tobii Eye Tracker, allowing for them to be used simultaneously.
-                    <br /><br />
-                    This is where our research project comes in. 
-                    <br /><br />
-                    We've created an adapter that allows a number of different technologies to be able to interact with other objects in the same environments, independent of the device being used.
+                    Currently, taking the HTC Vive for example, there are a number of software platforms made specifically for this device.
+                    However, there isn't any that integrates the functions of both the HTC Vive and the Tobii Eye Tracker, allowing for them to be used simultaneously in the same project.
+                    <br><br>
+                    Select3D allows different technologies to be able to interact with other 3D objects in the same environments, independent of the device being used.
                     Particularly useful in gaming or even redefining the movie experience, this allows for ease in switching between input devices, not restricting technologies to the platform it is used on.
-                    <br /><br /><br />
+                    <br><br><br>
 
-                    <h4><b>Devices / technologies integrated:</b></h4><br />
+
+                    <h4><b>Description:</b></h4><br>               
+                    Select3D enables developers to easily add gaze pointers to a <a href="https://unity3d.com/unity">Unity</a> project, making GameObjects gaze-aware whenever the user looks at them.
+                    <br><br>
+                    If the script programmer uses the Select3D API with its event listeners, then the same interaction with objects in the scene can be performed with different input devices such as head trackers, gaze trackers and more. 
+                    This can be used to create an intuitive interaction system or to spread the functionality to a new source of input so that your controllers can be used to do something else.
+                    <br><br>
+                    As the library has been developed to automatically detect the device currently running using the main Unity / <a href="http://store.steampowered.com/steamvr">SteamVR</a> camera, the user only needs to import the scripts into their project, requiring no other setup and not needing to manually switch between devices.
+                    The given C# scripts work with all integrated technologies.
+                    <br><br>
+                    Along with a Unity Package available ready to be imported and run, Select3D can be tested within the given example scenes.
+                    <br><br><br>
+
+
+                    <h4><b>Devices / technologies integrated:</b></h4><br>
                     <ul>
-                        <li>SMI HTC Vive</li>
-                        <li>VR Head Tracking</li>
-                        <li>Tobii Eye-Tracker 4C</li>
+                        <li><a href="https://www.vive.com/nz/">SMI HTC Vive</a></li>
+                        <li><a href="https://www.vive.com/nz/">VR Head Tracking</a></li>
+                        <li><a href="https://tobiigaming.com/eye-tracker-4c/">Tobii Eye-Tracker 4C</a></li>
                     </ul>
                 </p>
             </div>
@@ -145,17 +146,17 @@
 </div>
 
 
-<!-- Library -->
+<!-- Downloads -->
 <div class="header" id="downloads">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr><br />
-                <h3>Downloads</h3><br />
+                <hr><br>
+                <h3>Downloads</h3><br>
                 <p>
                     <ul>
-                        <li>Project Scripts Download: <a href="https://github.com/PriyankitSingh/VRAdapter" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a></li>
-                        <li>Pointer Adapter Unity Package: <a href="https://nofile.io/f/E81jw3P4116/AdapterUnityPackage.zip" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a></li>
+                        <li>Library / Scripts Download: <a href="https://github.com/PriyankitSingh/VRAdapter" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a></li>
+                        <li>Select3D Unity Package: <a href="https://nofile.io/f/E81jw3P4116/AdapterUnityPackage.zip" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a></li>
                     </ul>                    
                 </p>
             </div>
@@ -169,41 +170,43 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr><br />
+                <hr><br>
                 <h3>Documentation</h3>
                 <p>
-                    <br /><br />
-                    <h4><b>How to Use the Adapter:</b></h4><br />
+                    <br><br>
+                    <h4><b>How to Use the Adapter:</b></h4><br>
                     
                     Import the unity package provided with this library into your project.
                     This package contains all the required dependencies, test scenes, and scripts to provide an example of the usage of this tool.
                     "Test.cs" script provides an example of how the tool can be used to make your games gaze enabled. <br><br><br>
 
                     <h4><b>Test Script</b></h4>
-                    Users can run this script to test their devices.<br /><br />
+                    Users can run this script to test the Select3D library.<br><br>
                     <script src="https://gist.github.com/Sabaoon96/734ab6d204976fff094b3da094201a3e.js"></script>    
-                    <br /><br /><br />
+                    <br><br><br>
 
-                    <b>If running your own project script:</b>
-                    <br /><br />
+                    <b>Following the code structure as in the example above:</b>
+                    <br><br>
                     <ul>
-                        <li>Add a platform variable to the script to select the type of platform you want to run this script on.</li>
+                        <li>Add a platform variable to your project script to select the type of platform you want to run this script on.</li>
                         <li>Select Generic for a normal HTC Vive to add the head tracking based selector, SMI to run the script on a SMI HTC Vive, or Tobii to use the Tobii Eye-Tracking device.</li>
-                        <li>Add the following code snippet to the start method to set-up the adapter:</li>
+                        <li>Add the following code snippet to the start method to set-up the Select3D library:</li>
                     </ul>
 
-                    <br />
+                    <br>
                     <blockquote>
-                        gameObject.AddComponent&lt;VRAdapter&gt;();<br />
-                        adapter = gameObject.GetComponent&lt;VRAdapter&gt;();<br />
-                        adapter.setTarget(this.gameObject);<br />
+                        gameObject.AddComponent&lt;VRAdapter&gt;();<br>
+                        adapter = gameObject.GetComponent&lt;VRAdapter&gt;();<br>
+                        adapter.setTarget(this.gameObject);<br>
                         adapter.setPlatform(platform); // platform is a public variable.
                     </blockquote>
-                    <br />
+                    <br>
 
                     <ul>
                         <li>Add GazeInterface to the script and import all the required methods from the interface.</li>
                         <li>Implement methods: OnPointerEnter, OnPointerExit and OnPointerStay methods.</li>
+                        <li>These methods contain the code that define user interactions with the 3D objects.</li>
+                        <li>Once all these steps are complete, your project script will be ready to run.</li>
                     </ul>               
                 </p>
             </div>
@@ -217,9 +220,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr><br />
+                <hr><br>
                 <h3>Acknowledgements</h3> 
-                <br />
+                <br>
                 <ol>
                     <li><a href="https://github.com/sabaoon96" target="_blank">Sabaoon Raza Khan</a></li>
                     <li><a href="https://github.com/priyankitsingh" target="_blank">Priyankit Singh</a></li>
@@ -236,14 +239,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <hr><br />
+                <hr><br>
                 <h3>Contact us</h3>
-                <br />
+                <br>
                 <address>
-                    HCI @ University of Auckland<br />
-                    Auckland 1010, New Zealand <br>
+                    HCI @ University of Auckland<br>
+                    Auckland 1010, New Zealand <br><br>
+
+                    Copyright &copy;
+                    <script type="text/javascript">
+                        // Year automatically updates
+                        var d = new Date()
+                        document.write(d.getFullYear())
+                    </script>
+                     | Select3D
                 </address>
                 <!-- Needed so that jump to anchor lets contact appear at top: -->
+                <br><br><br><br>
                 <br><br><br><br>
                 <br><br><br><br>
                 <br><br><br><br>
