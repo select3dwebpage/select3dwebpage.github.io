@@ -7,5 +7,5 @@
 ## Important links:
 
 - [Select3D | Homepage](https://select3dwebpage.github.io/)
-- [Select3D | Unity Package](https://nofile.io/f/FAFBGfe5ub6/PointerAdapterPackage.unitypackage)
+- [Select3D | Unity Package](https://nofile.io/f/1KczJe318fK/PointerAdapterPackage.zip)
 - [Select3D | Library](https://github.com/PriyankitSingh/VRAdapter)
